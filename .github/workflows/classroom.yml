@@ -19,8 +19,9 @@ jobs:
     - name: Download test files from private repository
       run: |
         git clone https://$GITHUB_ACTOR:${{ secrets.PAT_TOKEN }}@github.com/SeanXLChen/WebDev-Assignment1.git
-        cp -r WebDev-Assignment1/test/* ./test/ # Copy tests into a "test" directory
-
+        mkdir -p ./test/ # Create the test directory if it doesn't exist
+        cp -r WebDev-Assignment1/test/* ./test/ # Copy tests into the "test" directory
+        
     - name: Check directory structure
       run: |
         ls -R
