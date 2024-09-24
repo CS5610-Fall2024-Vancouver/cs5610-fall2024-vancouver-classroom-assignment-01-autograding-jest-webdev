@@ -21,6 +21,10 @@ jobs:
         git clone https://$GITHUB_ACTOR:${{ secrets.PAT_TOKEN }}@github.com/SeanXLChen/WebDev-Assignment1.git
         cp -r WebDev-Assignment1/test/* .
 
+    - name: Check directory structure
+      run: |
+        ls -R # List all files and directories in the environment to see what's there
+
     - name: Test-01
       id: test-01
       uses: classroom-resources/autograding-command-grader@v1
