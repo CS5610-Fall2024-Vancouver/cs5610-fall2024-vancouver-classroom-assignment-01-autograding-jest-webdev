@@ -30,6 +30,14 @@ jobs:
       run: |
         pwd
         ls -R  # Output directory structure to confirm the layout
+
+    # Debug step to check pwd and directory structure before running each test
+    - name: Test-01 (debug pwd + ls)
+      id: test-01
+      run: |
+        pwd
+        ls -R
+        npx jest test01.test.js
     
     - name: Test-01
       id: test-01
