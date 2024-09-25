@@ -19,8 +19,12 @@ jobs:
     - name: Download test files from private repository
       run: |
         git clone https://$GITHUB_ACTOR:${{ secrets.PAT_TOKEN }}@github.com/SeanXLChen/WebDev-Assignment1.git
-        # Now the tests are directly available in WebDev-Assignment1/test folder, no need to copy
-
+        cp -r WebDev-Assignment1/test/* ./  # Copy test files to the root directory
+    
+    - name: Remove WebDev-Assignment1 folder (optional)
+      run: |
+        rm -rf WebDev-Assignment1  # This removes the WebDev-Assignment1 folder entirely if you want to ignore it
+    
     - name: Check directory structure
       run: |
         pwd
