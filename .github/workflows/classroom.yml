@@ -25,13 +25,16 @@ jobs:
       run: |
         ls -R
         
+    - name: Adjust working directory
+    run: cd assignment-01-SeanXLChen # Ensure you're in the correct working directory
+        
     - name: Test-01
       id: test-01
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test-01
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test01.test.js
+        command: npx jest test/test01.test.js
         timeout: 10
         max-score: 3
     
@@ -41,7 +44,7 @@ jobs:
       with:
         test-name: Test-02
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test02.test.js
+        command: npx jest test/test02.test.js
         timeout: 10
         max-score: 3
     
@@ -51,7 +54,7 @@ jobs:
       with:
         test-name: Test-03
         setup-command: npm install
-        command: npx jest npx jest WebDev-Assignment1/test/test03.test.js
+        command: npx jest npx jest test/test03.test.js
         timeout: 10
         max-score: 3
     
@@ -61,7 +64,7 @@ jobs:
       with:
         test-name: Test-04
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test04.test.js
+        command: npx jest test/test04.test.js
         timeout: 10
         max-score: 3
     
@@ -71,7 +74,7 @@ jobs:
       with:
         test-name: Test-05
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test05.test.js
+        command: npx jest test/test05.test.js
         timeout: 10
         max-score: 3
     
