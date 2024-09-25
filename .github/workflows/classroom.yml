@@ -36,7 +36,7 @@ jobs:
       with:
         test-name: Test-01
         setup-command: npm install
-        command: npx jest test/test01.test.js  # Use correct test folder
+        command: npx jest test01.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -46,7 +46,7 @@ jobs:
       with:
         test-name: Test-02
         setup-command: npm install
-        command: npx jest test/test02.test.js  # Use correct test folder
+        command: npx jest test02.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -56,7 +56,7 @@ jobs:
       with:
         test-name: Test-03
         setup-command: npm install
-        command: npx jest test/test03.test.js  # Use correct test folder
+        command: npx jest test03.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -66,7 +66,7 @@ jobs:
       with:
         test-name: Test-04
         setup-command: npm install
-        command: npx jest test/test04.test.js  # Use correct test folder
+        command: npx jest test04.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -76,7 +76,7 @@ jobs:
       with:
         test-name: Test-05
         setup-command: npm install
-        command: npx jest test/test05.test.js  # Use correct test folder
+        command: npx jest test05.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -86,7 +86,7 @@ jobs:
       with:
         test-name: Test-06
         setup-command: npm install
-        command: npx jest test/test06.test.js  # Use correct test folder
+        command: npx jest test06.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -96,7 +96,7 @@ jobs:
       with:
         test-name: Test-07
         setup-command: npm install
-        command: npx jest test/test07.test.js  # Use correct test folder
+        command: npx jest test07.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -106,7 +106,7 @@ jobs:
       with:
         test-name: Test-08
         setup-command: npm install
-        command: npx jest test/test08.test.js  # Use correct test folder
+        command: npx jest test08.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -116,7 +116,7 @@ jobs:
       with:
         test-name: Test-09
         setup-command: npm install
-        command: npx jest test/test09.test.js  # Use correct test folder
+        command: npx jest test09.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -126,7 +126,7 @@ jobs:
       with:
         test-name: Test-10
         setup-command: npm install
-        command: npx jest test/test10.test.js  # Use correct test folder
+        command: npx jest test10.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -136,7 +136,7 @@ jobs:
       with:
         test-name: Test-11
         setup-command: npm install
-        command: npx jest test/test11.test.js  # Use correct test folder
+        command: npx jest test11.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
