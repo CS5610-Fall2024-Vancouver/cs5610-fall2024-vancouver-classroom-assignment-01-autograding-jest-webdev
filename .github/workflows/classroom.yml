@@ -16,25 +16,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Download test files from private repository
-      run: |
-        git clone https://$GITHUB_ACTOR:${{ secrets.PAT_TOKEN }}@github.com/SeanXLChen/WebDev-Assignment1.git
-        # Now the tests are directly available in WebDev-Assignment1/test folder, no need to copy
-
     - name: Check directory structure
       run: |
-        ls -R
-        
-    - name: Adjust working directory
-    run: cd assignment-01-SeanXLChen # Ensure you're in the correct working directory
-        
+        pwd
+        ls -R  # Output directory structure to confirm the layout
+    
     - name: Test-01
       id: test-01
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test-01
         setup-command: npm install
-        command: npx jest test/test01.test.js
+        command: npx jest test/test01.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -44,7 +37,7 @@ jobs:
       with:
         test-name: Test-02
         setup-command: npm install
-        command: npx jest test/test02.test.js
+        command: npx jest test/test02.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -54,7 +47,7 @@ jobs:
       with:
         test-name: Test-03
         setup-command: npm install
-        command: npx jest npx jest test/test03.test.js
+        command: npx jest test/test03.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -64,7 +57,7 @@ jobs:
       with:
         test-name: Test-04
         setup-command: npm install
-        command: npx jest test/test04.test.js
+        command: npx jest test/test04.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -74,7 +67,7 @@ jobs:
       with:
         test-name: Test-05
         setup-command: npm install
-        command: npx jest test/test05.test.js
+        command: npx jest test/test05.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -84,7 +77,7 @@ jobs:
       with:
         test-name: Test-06
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test06.test.js
+        command: npx jest test/test06.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -94,7 +87,7 @@ jobs:
       with:
         test-name: Test-07
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test07.test.js
+        command: npx jest test/test07.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -104,7 +97,7 @@ jobs:
       with:
         test-name: Test-08
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test08.test.js
+        command: npx jest test/test08.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -114,7 +107,7 @@ jobs:
       with:
         test-name: Test-09
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test09.test.js
+        command: npx jest test/test09.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -124,7 +117,7 @@ jobs:
       with:
         test-name: Test-10
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test10.test.js
+        command: npx jest test/test10.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -134,7 +127,7 @@ jobs:
       with:
         test-name: Test-11
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test11.test.js
+        command: npx jest test/test11.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -144,7 +137,7 @@ jobs:
       with:
         test-name: Test-12
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test12.test.js
+        command: npx jest test/test12.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -154,7 +147,7 @@ jobs:
       with:
         test-name: Test-13
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test13.test.js
+        command: npx jest test/test13.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -164,7 +157,7 @@ jobs:
       with:
         test-name: Test-14
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test14.test.js
+        command: npx jest test/test14.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -174,7 +167,7 @@ jobs:
       with:
         test-name: Test-15
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test15.test.js
+        command: npx jest test/test15.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -184,7 +177,7 @@ jobs:
       with:
         test-name: Test-16
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test16.test.js
+        command: npx jest test/test16.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
     
@@ -194,7 +187,7 @@ jobs:
       with:
         test-name: Test-17
         setup-command: npm install
-        command: npx jest WebDev-Assignment1/test/test17.test.js
+        command: npx jest test/test17.test.js  # Use correct test folder
         timeout: 10
         max-score: 3
 
